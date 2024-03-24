@@ -4,9 +4,17 @@
     font-style: normal;
 }
 
+
 body{
     background-color: antiquewhite;
     font-family: serif;
+}
+
+@media (max-width: 400px){
+    body{
+        margin: 0px;
+        font-size: 6px;
+    }
 }
 
 nav, footer{
@@ -20,8 +28,22 @@ nav, footer{
     align-items: center;
 }
 
+@media (max-width: 400px){
+    nav, footer{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 nav img, footer img{
     height: 80%;
+}
+
+@media (max-width: 400px){
+    nav img, footer img{
+        display: none;
+    }
 }
 
 nav a, footer p{
@@ -29,6 +51,13 @@ nav a, footer p{
     font-family:fantasy;
     font-size: 2em;
     margin-right: 2%;
+}
+
+@media (max-width: 400px){
+    nav a, footer p{
+        font-size: 32px;
+        margin: 15px;
+    }
 }
 
 header, .Intro{
@@ -42,7 +71,7 @@ header, .Intro{
     align-items:center;
 }
 
-header #Head-img{
+#Head-img{
     height: 100%;
 }
 
@@ -53,6 +82,12 @@ header #Head-img{
     text-align:center;
     margin-top: -10%;
     margin-bottom: 0%;
+}
+
+@media (max-width: 400px){
+    .Titolo{
+        margin-top: -80px;
+    }
 }
 
 .Intro{
@@ -76,7 +111,8 @@ section #Introduzione{
 }
 
 article{
-    background-image: url("Pergamena2.png");
+    background-image: url("Icone/Pergamena2.png");
+    background-size: cover;
     border-radius: 10px;
     height: 100%;
     width: 80%;
@@ -87,6 +123,15 @@ article{
     flex-direction: column;
 }
 
+@media (max-width: 400px){
+    article{
+        width: 100%;
+        padding: 0%;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+}
+
 .Riquadri{
     height: 50%;
     margin: 5% 10%;
@@ -94,6 +139,16 @@ article{
     justify-content: center;
     align-items:center;
     flex-direction: row;
+}
+
+@media (max-width: 400px){
+    .Riquadri{
+        height: 100%;
+        width: 20%;
+        margin: 5%, auto;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 
 .Riquadri div{
@@ -106,10 +161,27 @@ article{
     flex-direction:column;
 }
 
+@media (max-width: 400px){
+    .Riquadri div{
+        height: 33%;
+        margin: 0%;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction:column;
+    }
+}
+
 .Riquadri img{
     height: 80%;
     border-radius: 10px;
     margin: 5%;
+}
+
+@media (max-width: 400px){
+    .Riquadri img{
+        height: 40%;
+    }
 }
 
 .Riquadri a{
@@ -119,7 +191,6 @@ article{
     margin-top: 5%;
     margin-bottom: 5%;
 }
-
 
 nav a:hover, .Riquadri a:hover{
     cursor: pointer;
